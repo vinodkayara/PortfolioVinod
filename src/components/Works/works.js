@@ -4,6 +4,7 @@ import allbit from '../Works/allbit.png';
 import codelab from '../Works/codelab.png';
 import Mite from '../Works/Mite.png';
 import nmc from '../Works/nmc.png';
+import kuria from '../Works/kuria.jpg';
 
 function Works() {
   const [showCertificates, setShowCertificates] = useState(false);
@@ -29,6 +30,12 @@ function Works() {
       title: "NMC PU College",
       desc: "Completed Pre-University with distinction in PCMC stream.",
     },
+     {
+      img: kuria,
+      title: "Blessed Kuria Kose school Guthigar",
+      desc: "Completed SSLC with distinction .",
+    },
+
   ];
 
   const certificates = [
