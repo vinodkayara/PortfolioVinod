@@ -1,0 +1,163 @@
+/* === Overall Page === */
+#contactPage {
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* === Section Title === */
+.contactPageTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #00d9ff;
+}
+
+/* === Projects Section === */
+#clients {
+    padding: 2rem 1rem;
+    background-color: #1c1c1c;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.projectList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.projectCard {
+    background-color: #2a2a2a;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #f0f0f0;
+    transition: transform 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+}
+
+.projectCard h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #00d9ff;
+}
+
+.projectCard p {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 0.4rem 0;
+}
+
+.projectCard a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #00d9ff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* === Contact Section === */
+#contact {
+    margin-bottom: 3rem;
+}
+
+.contactCard {
+    background: linear-gradient(145deg, #2e2d2d, #222e4c);
+    box-shadow: 0 8px 20px rgba(57, 55, 55, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50rem;
+}
+
+.contactDetails {
+    font-size: 1rem;
+    color: #f8f4f4;
+    margin-bottom: 1rem;
+}
+
+.contactDetails a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.link {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.link:hover {
+    transform: scale(1.1);
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+    .contactPageTitle {
+        font-size: 2.3rem;
+       
+    }
+
+    .projectCard {
+        padding: 1rem;
+    }
+
+    .projectCard h3 {
+        font-size: 1.2rem;
+    }
+
+    .projectCard p {
+        font-size: 0.95rem;
+    }
+
+    .contactCard {
+        padding: 1.5rem;
+    }
+
+    .contactDetails p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projectCard {
+        padding: 0.8rem;
+    }
+
+    .link {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .contactCard {
+        padding: 1.2rem;
+    }
+
+    .contactPageTitle {
+        font-size: 1.9rem;
+        color: aliceblue;
+    }
+}
